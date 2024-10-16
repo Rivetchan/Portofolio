@@ -246,7 +246,49 @@ h3 {
     text-align: center;
     line-height: 30px; 
     color: white;
-}       
+}
+
+/* Album & Event */
+
+.album-container, .event-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.album, .event {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.album-photo, .event-photo {
+    width: 300px; 
+    height: 150px; 
+    border-radius: 15px;
+    transition: transform 0.3s ease, filterAS 0.3s ease; 
+    filter: blur(3px); 
+    margin: 40px 0; 
+}
+
+.album-photo:hover, .event-photo:hover {
+    transform: scale(1.2); 
+    filter: blur(0); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.album-item, .event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.album-title, .event-title {
+    margin-top: 5px; 
+    font-weight: bold;
+    color: white; 
+    text-align: center; 
+}
 
 /* Contact */
 
