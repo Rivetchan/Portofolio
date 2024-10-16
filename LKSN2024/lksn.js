@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const totalImages = document.querySelectorAll('.lksn-gallery img').length;
-    document.getElementById('total-foto').textContent = 'Total lksn: ' + totalImages;
+    document.getElementById('total-foto').textContent = 'Total Foto : ' + totalImages;
 });
 
 document.querySelectorAll('.lksn-gallery img').forEach((image) => {
