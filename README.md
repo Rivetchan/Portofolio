@@ -29,3 +29,7 @@ Saya **Rivet**, seorang developer yang berfokus pada berbagai aspek teknologi. D
 ---
 
 **"Teknologi adalah media untuk mengekspresikan kreativitas saya."**
+
+---
+
+** THIS MY ORIGINAL WEBSITE I MAKE IT **
