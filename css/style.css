@@ -290,6 +290,48 @@ h3 {
     text-align: center; 
 }
 
+/* Projek All */
+
+.projek-container, .web-container, .cyber-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.projek, .web, .cyber {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.projek-photo, .web-photo, .cyber-photo {
+    width: 300px; 
+    height: 150px; 
+    border-radius: 15px;
+    transition: transform 0.3s ease, filterAS 0.3s ease; 
+    filter: blur(3px); 
+    margin: 40px 0; 
+}
+
+.projek-photo:hover, .web-photo:hover, .cyber-photo:hover {
+    transform: scale(1.2); 
+    filter: blur(0); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.projek-item, .web-item, .cyber-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.projek-title, .web-title, .cyber-title {
+    margin-top: 5px; 
+    font-weight: bold;
+    color: white; 
+    text-align: center; 
+}
+
 /* Contact */
 
 .contact-container {
@@ -418,6 +460,11 @@ h3 {
         height: auto;
     }
 
+    .projek-photo, .web-photo, .cyber-photo {
+        width: 100%;
+        height: auto;
+    }
+
     .contact-box {
         flex-direction: column;
         width: 90%;
@@ -468,6 +515,11 @@ h3 {
     }
 
     .album-photo, .event-photo {
+        width: 90%;
+        height: auto;
+    }
+
+    .projek-photo, .web-photo, .cyber-photo {
         width: 90%;
         height: auto;
     }
