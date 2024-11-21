@@ -415,6 +415,32 @@ h3 {
     height: auto; 
 }
 
+/* Music */
+
+.music-player {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: rgba(30, 30, 30, 0.8); 
+    border: 2px solid #0ff; 
+    border-radius: 10px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    backdrop-filter: blur(10px); 
+}
+
+.music-logo {
+    width: 40px;  
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.music-logo:hover {
+    transform: scale(1.2);  
+    filter: drop-shadow(0 0 10px #0ff); 
+}
+
 /* Responsive */
 
 /* Responsive untuk Tablet (max-width: 768px) */
