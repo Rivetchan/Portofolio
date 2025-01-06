@@ -36,45 +36,12 @@
         <div class="welcome-container">
             <h1 id="welcome-text">Selamat Datang di Website Rivet</h1>
         </div>
-    </div>
-
-    <div class="music-player">
-        <img src="images/logo/music.png" alt="Music Logo" class="music-logo" id="musicLogo" style="cursor: pointer;">
-        <audio id="backgroundMusic" loop>
-            <source src="music/candu.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>    
+    </div> 
 
     <footer>
         <p>&copy; 2024 Rivet. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        const musicLogo = document.getElementById('musicLogo');
-        const backgroundMusic = document.getElementById('backgroundMusic');
-
-        function playMusic() {
-            backgroundMusic.play().catch((error) => {
-                console.log("Musik tidak bisa diputar otomatis: ", error);
-            });
-        }
-
-        window.addEventListener('load', playMusic);
-
-        musicLogo.addEventListener('click', () => {
-            if (backgroundMusic.paused) {
-                backgroundMusic.play().then(() => {
-                    musicLogo.src = 'images/logo/music.png'; 
-                }).catch((error) => {
-                    console.log("Error saat memutar musik: ", error);
-                });
-            } else {
-                backgroundMusic.pause();
-                musicLogo.src = 'images/logo/mute.png'; 
-            }
-        });
-    </script>
 </body>
 </html>
